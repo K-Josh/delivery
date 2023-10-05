@@ -81,9 +81,9 @@ const Food = () => {
         className='border shadow-lg rounded-lg hover:scale-105'>
             <img src={item.image} alt={item.name} className='w-full h-[200px] object-cover rounded-l-lg'/>
             <div className='lg:flex lg:justify-between px-3 py-4'>
-                <p className='font-bold text-sm lg:text-md'>{item.name}</p>
+                <p className='font-bold text-sm whitespace-nowrap lg:text-md'>{item.name}</p>
                 <p>
-                    <span className='bg-secondary p-1 text-sm sm:whitespace-nowrap  rounded-full text-white'>{item.price} </span>
+                    <span className='bg-secondary p-1 text-sm rounded-full text-white'>{item.price} </span>
                 </p>
             </div>
         </div>
