@@ -63,13 +63,13 @@ const Food = () => {
             <div className="flex space-x-4 max-w-[390px] w-full">
             <button
               onClick={()=> filterPrice('500 FCFA')} 
-              className="m-3 border-secondary bg-white hover:text-white hover: hover:bg-secondary text-secondary text-md">500 FCFA</button>
+              className="sm:m-3 lg:whitespace-nowrap border-secondary bg-white hover:text-white hover: hover:bg-secondary text-secondary text-md">500 FCFA</button>
             <button 
                onClick={()=> filterPrice('1000 FCFA')} 
-              className="m-3 border-secondary bg-white hover:text-white hover: hover:bg-secondary text-secondary text-md">1000 FCFA</button>
+              className="sm:m-3 lg:whitespace-nowrap  border-secondary bg-white hover:text-white hover: hover:bg-secondary text-secondary text-md">1000 FCFA</button>
             <button
                onClick={()=> filterPrice('6000 FCFA')}  
-              className="m-3 border-secondary bg-white hover:text-white hover: hover:bg-secondary text-secondary text-md">6000 FCFA</button>
+              className="sm:m-3 lg:whitespace-nowrap  border-secondary bg-white hover:text-white hover: hover:bg-secondary text-secondary text-md">6000 FCFA</button>
             </div>
          </div>
     </div>
@@ -83,7 +83,7 @@ const Food = () => {
             <div className='flex justify-between px-2 py-4'>
                 <p className='font-bold'>{item.name}</p>
                 <p>
-                    <span className='bg-secondary p-1 text-sm rounded-full text-white'>{item.price} </span>
+                    <span className='bg-secondary p-1 text-sm sm:whitespace-nowrap  rounded-full text-white'>{item.price} </span>
                 </p>
             </div>
         </div>
